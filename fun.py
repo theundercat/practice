@@ -13,17 +13,17 @@ if offer and tcost:
         OP = (offer - tcost) / offer * 100
         st.write(f"O.P: {OP:.2f}%")
         
-        # Conditional messages based on OP percentage
+        # Conditional messages based on OP percentage with ranges
         if OP > 30:
             st.write("God of Sales")
-        elif OP > 20:
+        elif 20 < OP <= 30:
             st.write("That's really good.")
-        elif OP > 15:
+        elif 15 < OP <= 20:
             st.write("That's pretty good!")
-        elif OP < 5:
-            st.write("Automatic alert e-mail has been sent to HQ.")
-        elif OP < 15:
+        elif 10 <= OP <= 15:
             st.write("You can do better than that..")
+        elif OP < 5:
+            st.write("Automatic alert e-mail has been sent to HQ. Your laptop will explode in 60 seconds.")
             
     except ValueError:
         st.write("Numeric values only, bro.")
