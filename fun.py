@@ -20,7 +20,7 @@ if offer and tcost:
         
         # Conditional messages based on OP percentage with ranges
         if OP > 30:
-            st.write("God of Sales")
+            st.write("God of Sales!")
         elif 20 < OP <= 30:
             st.write("That's really good.")
         elif 15 < OP <= 20:
