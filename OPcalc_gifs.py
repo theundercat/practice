@@ -10,7 +10,7 @@ gif_comeon = "https://raw.githubusercontent.com/theundercat/practice/refs/heads/
 gif_confused = "https://raw.githubusercontent.com/theundercat/practice/refs/heads/main/calculating.gif"
 gif_alert = "https://raw.githubusercontent.com/theundercat/practice/refs/heads/main/kimjongun-rocket.gif"
 
-st.write("Ultra-Advanced, Cutting-Edge O.P Calculator 3000")
+st.write("Ultra-Advanced Cutting-Edge O.P Calculator 3000")
 
 # Get user inputs
 offer = st.text_input("Price:")
