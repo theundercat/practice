@@ -42,7 +42,7 @@ if offer and tcost:
             st.write("Come on now.")
             st.image(gif_comeon, width=500)  # Display GIF for "You can do better than that.."
         elif OP < 5:
-            st.write("Automatic alert e-mail has been sent to HQ. Device exploding in 10 seconds.")
+            st.write("Your failure has been alerted to HQ. Device exploding in 10 seconds.")
             
             # Initialize the countdown timer in session state to 10 seconds
             if 'timer' not in st.session_state:
