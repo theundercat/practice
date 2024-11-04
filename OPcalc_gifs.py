@@ -26,13 +26,13 @@ if offer and tcost:
         st.write(f"O.P: {OP:.2f}%")
         
         # Conditional messages based on OP percentage with ranges
-        if OP > 30:
+        if OP => 30:
             st.write("When your sales pitch is so good, even the GIFs are impressed.")
             st.image(gif_god_of_sales, width=500)
-        elif 20 < OP <= 30:
+        elif 20 <= OP <= 30:
             st.write("This would be such a tremendous, fantastic sale, you'll make America great again.")
             st.image(gif_really_good, width=500)
-        elif 15 < OP <= 20:
+        elif 15 <= OP <= 20:
             st.write("You’ll be squeezing the clients dry, and they’ll say, ‘Thank you, may I have another?'")
             st.image(gif_pretty_good, width=500)  
         elif 10 <= OP <= 14.99:
