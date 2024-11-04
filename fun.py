@@ -40,7 +40,7 @@ if offer and tcost:
             st.image(gif_better_than_that, width=500)  # Display GIF for "You can do better than that.."
         elif  5 <= OP <= 10:
             st.write("Come on now.")
-            st.image(gif_confused, width=500)  # Display GIF for "You can do better than that.."
+            st.image(gif_comeon, width=500)  # Display GIF for "You can do better than that.."
         elif OP < 5:
             st.write("Automatic alert e-mail has been sent to HQ. Device exploding in 10 seconds.")
             
