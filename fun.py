@@ -1,6 +1,6 @@
 import streamlit as st
 
-offer = st.text_input("Price Offer: ")
+offer = st.text_input("Price Offer:")
 tcost = st.text_input("Total cost:")
 
 if offer and tcost:
