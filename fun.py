@@ -42,7 +42,7 @@ if offer and tcost:
             st.write("Come on now.")
             st.image(gif_comeon, width=500)  # Display GIF for "You can do better than that.."
         elif OP < 5:
-            st.write("Your failure has been alerted to HQ. Device exploding in 10 seconds.")
+            st.write("Your failure has been alerted to HQ and your device is exploding in 10 seconds.")
             
             # Initialize the countdown timer in session state to 10 seconds
             if 'timer' not in st.session_state:
@@ -67,5 +67,5 @@ if offer and tcost:
             st.image(gif_alert, width=500)  # Adjust width as needed
             
     except ValueError:
-        st.write("BRO. Numeric values only.")
+        st.write("Loading... Please wait.")
         st.image(gif_confused, width=500)
