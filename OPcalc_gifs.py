@@ -27,10 +27,10 @@ if offer and tcost:
         
         # Conditional messages based on OP percentage with ranges
         if OP > 30:
-            st.write("Your sales pitch will be so good, even the GIFs will be impressed.")
+            st.write("When your sales pitch is so good, even the GIFs are impressed.")
             st.image(gif_god_of_sales, width=500)
         elif 20 < OP <= 30:
-            st.write("This sale would be so big, so tremendous, we might have to rename the company after you.")
+            st.write("This would be a tremendous, fantastic sale. You'll make America great again.")
             st.image(gif_really_good, width=500)
         elif 15 < OP <= 20:
             st.write("You’ll be squeezing the clients dry, and they’ll say, ‘Thank you, may I have another?")
@@ -39,7 +39,7 @@ if offer and tcost:
             st.write("15% is so close you can almost taste it!")
             st.image(gif_better_than_that, width=500)  
         elif  5 <= OP <= 9.99:
-            st.write("Not even 10%? Kim Jong Un's missiles have better odds of hitting their targets than that!")
+            st.write("The price is so low, even Kim Jong Un could afford it!")
             st.image(gif_comeon, width=500) 
         elif OP < 5:
             st.write("HQ has been notified of your failure. Self-destruct sequence initiated.")
