@@ -30,13 +30,13 @@ if offer and tcost:
             st.write("When your sales pitch is so good, even the GIFs are impressed.")
             st.image(gif_god_of_sales, width=500)  # Display GIF for "God of Sales"
         elif 20 < OP <= 30:
-            st.write("In Trump's voice: This sale would be so big, so tremendous, we might have to rename the company after you. Wonderful job.")
+            st.write("In Trump's voice: This sale would be so big, so tremendous, we might have to rename the company after you.")
             st.image(gif_really_good, width=500)  # Display GIF for "That's really good"
         elif 15 < OP <= 20:
-            st.write("You’re squeezing them dry, and they’re saying, ‘Thank you, may I have another?")
+            st.write("You’re squeezing the clients dry, and they’re saying, ‘Thank you, may I have another?")
             st.image(gif_pretty_good, width=500)  # Display GIF for "That's pretty good!"
         elif 10 <= OP <= 15:
-            st.write("This is like eating pierogi with no fried onions. Go for over 15% and make it like a full-on Polish Christmas Eve!")
+            st.write("10-15%? You've got the key in the door, just need to turn it to unlock the 15% club.")
             st.image(gif_better_than_that, width=500)  # Display GIF for "You can do better than that.."
         elif  5 <= OP <= 9.99:
             st.write("Not even 10%? Kim Jong Un's missiles have better odds of hitting their targets than that!")
