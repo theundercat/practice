@@ -2,7 +2,12 @@ import streamlit as st
 import time
 
 # Define the path or URL to your GIF
-gif_url = "https://raw.githubusercontent.com/theundercat/practice/refs/heads/main/kimjongun-rocket.gif"  # Example GIF URL
+gif_god_of_sales = "https://raw.githubusercontent.com/theundercat/practice/refs/heads/main/leonardo-dicaprio-great-gatsby.gif"
+gif_really_good = "https://raw.githubusercontent.com/theundercat/practice/refs/heads/main/point-at-you-point.gif"
+gif_pretty_good = "https://raw.githubusercontent.com/theundercat/practice/refs/heads/main/Brent-Rambo-Approves.gif"
+gif_better_than_that = "https://raw.githubusercontent.com/theundercat/practice/refs/heads/main/confused-thin-air.gif"
+gif_alert = "https://raw.githubusercontent.com/theundercat/practice/main/kimjongun-rocket.gif"
+gif_confused = "hhttps://raw.githubusercontent.com/theundercat/practice/refs/heads/main/calculating.gif"
 
 # Get user inputs
 offer = st.text_input("Price Offer: ")
@@ -19,14 +24,18 @@ if offer and tcost:
         st.write(f"O.P: {OP:.2f}%")
         
         # Conditional messages based on OP percentage with ranges
-        if OP > 30:
+         if OP > 30:
             st.write("God of Sales!")
+            st.image(gif_god_of_sales, width=300)  # Display GIF for "God of Sales"
         elif 20 < OP <= 30:
-            st.write("That's really good.")
+            st.write("Very good!")
+            st.image(gif_really_good, width=300)  # Display GIF for "That's really good"
         elif 15 < OP <= 20:
-            st.write("That's pretty good!")
+            st.write("Preeetty good!")
+            st.image(gif_pretty_good, width=300)  # Display GIF for "That's pretty good!"
         elif 10 <= OP <= 15:
             st.write("You can do better than that..")
+            st.image(gif_better_than_that, width=300)  # Display GIF for "You can do better than that.."
         elif OP < 5:
             st.write("Automatic alert e-mail has been sent to HQ. Device exploding in 10 seconds.")
             
@@ -53,4 +62,5 @@ if offer and tcost:
             st.image(gif_url, width=300)  # Adjust width as needed
             
     except ValueError:
-        st.write("Numeric values only, bro.")
+        st.write("BRO. Numeric values only.")
+        st.image(gif_confused, width=300)
