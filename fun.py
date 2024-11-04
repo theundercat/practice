@@ -6,8 +6,10 @@ gif_god_of_sales = "https://raw.githubusercontent.com/theundercat/practice/refs/
 gif_really_good = "https://raw.githubusercontent.com/theundercat/practice/refs/heads/main/point-at-you-point.gif"
 gif_pretty_good = "https://raw.githubusercontent.com/theundercat/practice/refs/heads/main/Brent-Rambo-Approves.gif"
 gif_better_than_that = "https://raw.githubusercontent.com/theundercat/practice/refs/heads/main/confused-thin-air.gif"
-gif_alert = "https://raw.githubusercontent.com/theundercat/practice/refs/heads/main/kimjongun-rocket.gif"
 gif_confused = "hhttps://raw.githubusercontent.com/theundercat/practice/refs/heads/main/calculating.gif"
+
+gif_alert = "https://raw.githubusercontent.com/theundercat/practice/refs/heads/main/kimjongun-rocket.gif"
+
 
 # Get user inputs
 offer = st.text_input("Price Offer: ")
@@ -36,6 +38,9 @@ if offer and tcost:
         elif 10 <= OP <= 15:
             st.write("You can do better than that..")
             st.image(gif_better_than_that, width=500)  # Display GIF for "You can do better than that.."
+        elif  5 <= OP <= 10:
+            st.write("Automatic alert e-mail has been sent to HQ. Device exploding in 10 seconds.")
+            st.image(gif_confused, width=500)  # Display GIF for "You can do better than that.."
         elif OP < 5:
             st.write("Automatic alert e-mail has been sent to HQ. Device exploding in 10 seconds.")
             
