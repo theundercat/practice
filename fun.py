@@ -28,7 +28,7 @@ if offer and tcost:
         elif 10 <= OP <= 15:
             st.write("You can do better than that..")
         elif OP < 5:
-            st.write("Automatic alert e-mail has been sent to HQ. Laptop exploding in 10 seconds.")
+            st.write("Automatic alert e-mail has been sent to HQ. Device exploding in 10 seconds.")
             
             # Initialize the countdown timer in session state to 10 seconds
             if 'timer' not in st.session_state:
