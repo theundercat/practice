@@ -4,8 +4,8 @@ import time
 # Define the text you want to display line-by-line
 lines = [
     "Who should win the election?",
-    "Trump? or Harris?",
-    "Choose wisely..:",
+    "Trump or Harris?",
+    "Choose wisely..",
 ]
 
 # Define the delay for each line (in seconds)
