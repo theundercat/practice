@@ -12,7 +12,7 @@ gif_alert = "https://raw.githubusercontent.com/theundercat/practice/refs/heads/m
 
 
 # Get user inputs
-offer = st.text_input("Price Offer: ")
+offer = st.text_input("Price Offer:")
 tcost = st.text_input("Total cost:")
 
 if offer and tcost:
@@ -27,20 +27,20 @@ if offer and tcost:
         
         # Conditional messages based on OP percentage with ranges
         if OP > 30:
-            st.write("When your sales pitch is so good, even the GIFs are impressed.")
-            st.image(gif_god_of_sales, width=500)  # Display GIF for "God of Sales"
+            st.write("Your sales pitch will be so good, even the GIFs will be impressed.")
+            st.image(gif_god_of_sales, width=500)
         elif 20 < OP <= 30:
             st.write("This sale would be so big, so tremendous, we might have to rename the company after you.")
-            st.image(gif_really_good, width=500)  # Display GIF for "That's really good"
+            st.image(gif_really_good, width=500)
         elif 15 < OP <= 20:
-            st.write("You’re squeezing the clients dry, and they’re saying, ‘Thank you, may I have another?")
-            st.image(gif_pretty_good, width=500)  # Display GIF for "That's pretty good!"
+            st.write("You’ll be squeezing the clients dry, and they’ll say, ‘Thank you, may I have another?")
+            st.image(gif_pretty_good, width=500)  
         elif 10 <= OP <= 14.99:
-            st.write("10-15%? You've got the key in the door, just need to turn it to unlock the 15% club.")
-            st.image(gif_better_than_that, width=500)  # Display GIF for "You can do better than that.."
+            st.write("15% is so close you can almost taste it!")
+            st.image(gif_better_than_that, width=500)  
         elif  5 <= OP <= 9.99:
             st.write("Not even 10%? Kim Jong Un's missiles have better odds of hitting their targets than that!")
-            st.image(gif_comeon, width=500)  # Display GIF for "You can do better than that.."
+            st.image(gif_comeon, width=500) 
         elif OP < 5:
             st.write("HQ has been notified of your failure. Self-destruct sequence initiated.")
             
