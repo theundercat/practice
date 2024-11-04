@@ -11,14 +11,14 @@ lines = [
 # Define the delay for each line (in seconds)
 delays = [3, 3, 4]  # Custom delay for each line
 
-# Create placeholders for each line
-placeholders = [st.empty() for _ in lines]
+# Create a single placeholder for all lines
+placeholder = st.empty()
 
 # Display each line with its specific delay, then clear it to simulate fading
 for i, line in enumerate(lines):
-    placeholders[i].write(line)
-    time.sleep(delays[i])  # Use the specific delay for each line
-    placeholders[i].empty()  # Clear the line to simulate fading
+    placeholder.write(line)  # Display the line
+    time.sleep(delays[i])    # Keep it on screen for the specified time
+    placeholder.empty()       # Clear the line to simulate fading
 
 # Now prompt for input after lines fade
 candidate1 = "Trump"
