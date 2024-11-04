@@ -10,6 +10,7 @@ gif_comeon = "https://raw.githubusercontent.com/theundercat/practice/refs/heads/
 gif_confused = "https://raw.githubusercontent.com/theundercat/practice/refs/heads/main/calculating.gif"
 gif_alert = "https://raw.githubusercontent.com/theundercat/practice/refs/heads/main/kimjongun-rocket.gif"
 
+st.write("LGCWR O.P Calculator")
 
 # Get user inputs
 offer = st.text_input("Price:")
