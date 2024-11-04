@@ -1,5 +1,7 @@
 import streamlit as st
+import time
 
+# Get user inputs
 offer = st.text_input("Price Offer: ")
 tcost = st.text_input("Total cost:")
 
@@ -23,7 +25,26 @@ if offer and tcost:
         elif 10 <= OP <= 15:
             st.write("You can do better than that..")
         elif OP < 5:
-            st.write("Automatic alert e-mail has been sent to HQ. Your laptop will explode in 60 seconds.")
+            st.write("Automatic alert e-mail has been sent to HQ.")
+            
+            # Initialize the countdown timer in session state
+            if 'timer' not in st.session_state:
+                st.session_state.timer = 60
+            
+            # Countdown loop
+            while st.session_state.timer > 0:
+                mins, secs = divmod(st.session_state.timer, 60)
+                timer_display = f"{mins:02d}:{secs:02d}"
+                
+                # Display the countdown
+                st.write(f"Countdown: {timer_display}")
+                
+                # Update timer
+                time.sleep(1)  # Wait for 1 second
+                st.session_state.timer -= 1
+                
+            # Display final message when countdown reaches 0
+            st.write("Time's up!")
             
     except ValueError:
         st.write("Numeric values only, bro.")
