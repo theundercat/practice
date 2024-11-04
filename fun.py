@@ -1,16 +1,28 @@
 import streamlit as st
+import time
 
+# Define the text you want to display line-by-line
+lines = [
+    "Who will win the election?",
+    "Trump? or Harris?",
+    "Type your choice and pick wisely:",
+]
+
+# Create placeholders for each line
+placeholders = [st.empty() for _ in lines]
+
+# Display each line with a delay, and then clear it to simulate fading
+for i, line in enumerate(lines):
+    placeholders[i].write(line)
+    time.sleep(2)  # Display each line for 2 seconds
+    placeholders[i].empty()  # Clear the line to simulate fading
+
+# Now prompt for input after lines fade
 candidate1 = "Trump"
 candidate2 = "Harris"
+Choice = st.text_input("Type your choice here:")
 
-# Display the question using Streamlit's st.write function
-st.write("Who will win the election?")
-st.write(f"{candidate1}? or {candidate2}?")
-
-# Use st.text_input to allow the user to type their choice
-Choice = st.text_input("Type your choice and pick wisely:")
-
-# Display the result based on the user's typed input
+# Display the result based on input
 if Choice:
     if Choice.lower() == candidate1.lower():
         st.write("MURICA")
