@@ -1,4 +1,4 @@
-
+import streamlit as st
 
 candidate1 = "Trump"
 candidate2 = "Harris"
