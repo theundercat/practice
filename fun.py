@@ -7,7 +7,6 @@ gif_really_good = "https://raw.githubusercontent.com/theundercat/practice/refs/h
 gif_pretty_good = "https://raw.githubusercontent.com/theundercat/practice/refs/heads/main/Brent-Rambo-Approves.gif"
 gif_better_than_that = "https://raw.githubusercontent.com/theundercat/practice/refs/heads/main/confused-thin-air.gif"
 gif_confused = "hhttps://raw.githubusercontent.com/theundercat/practice/refs/heads/main/calculating.gif"
-
 gif_alert = "https://raw.githubusercontent.com/theundercat/practice/refs/heads/main/kimjongun-rocket.gif"
 
 
@@ -39,7 +38,7 @@ if offer and tcost:
             st.write("You can do better than that..")
             st.image(gif_better_than_that, width=500)  # Display GIF for "You can do better than that.."
         elif  5 <= OP <= 10:
-            st.write("Automatic alert e-mail has been sent to HQ. Device exploding in 10 seconds.")
+            st.write("Come on now.")
             st.image(gif_confused, width=500)  # Display GIF for "You can do better than that.."
         elif OP < 5:
             st.write("Automatic alert e-mail has been sent to HQ. Device exploding in 10 seconds.")
