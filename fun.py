@@ -2,7 +2,7 @@ import streamlit as st
 import time
 
 # Define the path or URL to your GIF
-gif_url = "https://media.giphy.com/media/l0HlBO7eyXzSZkJri/giphy.gif"  # Example GIF URL
+gif_url = "gif_url = "https://raw.githubusercontent.com/theundercat/practice/main/path/to/kimjongun-rocket.gif""  # Example GIF URL
 
 # Get user inputs
 offer = st.text_input("Price Offer: ")
