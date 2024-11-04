@@ -26,16 +26,16 @@ if offer and tcost:
         # Conditional messages based on OP percentage with ranges
         if OP > 30:
             st.write("All hail the king!")
-            st.image(gif_god_of_sales, width=300)  # Display GIF for "God of Sales"
+            st.image(gif_god_of_sales, width=500)  # Display GIF for "God of Sales"
         elif 20 < OP <= 30:
             st.write("Very good!")
-            st.image(gif_really_good, width=300)  # Display GIF for "That's really good"
+            st.image(gif_really_good, width=500)  # Display GIF for "That's really good"
         elif 15 < OP <= 20:
             st.write("Preeetty good!")
-            st.image(gif_pretty_good, width=300)  # Display GIF for "That's pretty good!"
+            st.image(gif_pretty_good, width=500)  # Display GIF for "That's pretty good!"
         elif 10 <= OP <= 15:
             st.write("You can do better than that..")
-            st.image(gif_better_than_that, width=300)  # Display GIF for "You can do better than that.."
+            st.image(gif_better_than_that, width=500)  # Display GIF for "You can do better than that.."
         elif OP < 5:
             st.write("Automatic alert e-mail has been sent to HQ. Device exploding in 10 seconds.")
             
@@ -59,8 +59,8 @@ if offer and tcost:
             st.write("Boom!")
             
             # Display the GIF after the countdown ends
-            st.image(gif_alert, width=300)  # Adjust width as needed
+            st.image(gif_alert, width=500)  # Adjust width as needed
             
     except ValueError:
         st.write("BRO. Numeric values only.")
-        st.image(gif_confused, width=300)
+        st.image(gif_confused, width=500)
