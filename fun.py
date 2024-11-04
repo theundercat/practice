@@ -6,6 +6,7 @@ gif_god_of_sales = "https://raw.githubusercontent.com/theundercat/practice/refs/
 gif_really_good = "https://raw.githubusercontent.com/theundercat/practice/refs/heads/main/point-at-you-point.gif"
 gif_pretty_good = "https://raw.githubusercontent.com/theundercat/practice/refs/heads/main/Brent-Rambo-Approves.gif"
 gif_better_than_that = "https://raw.githubusercontent.com/theundercat/practice/refs/heads/main/confused-thin-air.gif"
+gif_comeon = "https://raw.githubusercontent.com/theundercat/practice/refs/heads/main/comeon.gif"
 gif_confused = "hhttps://raw.githubusercontent.com/theundercat/practice/refs/heads/main/calculating.gif"
 gif_alert = "https://raw.githubusercontent.com/theundercat/practice/refs/heads/main/kimjongun-rocket.gif"
 
