@@ -28,14 +28,11 @@ if offer and tcost:
         elif 10 <= OP <= 15:
             st.write("You can do better than that..")
         elif OP < 5:
-            st.write("Automatic alert e-mail has been sent to HQ. Your laptop explodes in 10 seconds.")
+            st.write("Automatic alert e-mail has been sent to HQ. Laptop exploding in 10 seconds.")
             
-            # Initialize the countdown timer in session state
+            # Initialize the countdown timer in session state to 10 seconds
             if 'timer' not in st.session_state:
-                st.session_state.timer = 10
-
-            # Display the GIF
-            st.image(gif_url, width=300)  # Adjust width as needed
+                st.session_state.timer = 10  # Set the timer to 10 seconds
             
             # Countdown loop
             while st.session_state.timer > 0:
@@ -51,6 +48,9 @@ if offer and tcost:
                 
             # Display final message when countdown reaches 0
             st.write("Boom!")
+            
+            # Display the GIF after the countdown ends
+            st.image(gif_url, width=300)  # Adjust width as needed
             
     except ValueError:
         st.write("Numeric values only, bro.")
