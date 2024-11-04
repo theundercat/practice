@@ -2,7 +2,7 @@ import streamlit as st
 import time
 
 # Define the path or URL to your GIF
-gif_god_of_sales = "https://raw.githubusercontent.com/theundercat/practice/refs/heads/main/leonardo-dicaprio-great-gatsby.gif"
+gif_god_of_sales = "https://raw.githubusercontent.com/theundercat/practice/refs/heads/main/giphy.gif"
 gif_really_good = "https://raw.githubusercontent.com/theundercat/practice/refs/heads/main/point-at-you-point.gif"
 gif_pretty_good = "https://raw.githubusercontent.com/theundercat/practice/refs/heads/main/Brent-Rambo-Approves.gif"
 gif_better_than_that = "https://raw.githubusercontent.com/theundercat/practice/refs/heads/main/confused-thin-air.gif"
