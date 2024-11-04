@@ -12,8 +12,8 @@ gif_alert = "https://raw.githubusercontent.com/theundercat/practice/refs/heads/m
 
 
 # Get user inputs
-offer = st.text_input("Price Offer:")
-tcost = st.text_input("Total cost:")
+offer = st.text_input("Price:")
+tcost = st.text_input("Cost:")
 
 if offer and tcost:
     try:
