@@ -39,7 +39,7 @@ if offer and tcost:
             
             # Countdown loop
             while st.session_state.timer > 0:
-                mins, secs = divmod(st.session_state.timer, 10)
+                mins, secs = divmod(st.session_state.timer, 60)
                 timer_display = f"{mins:02d}:{secs:02d}"
                 
                 # Display the countdown
