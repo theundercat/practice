@@ -33,7 +33,7 @@ if offer and tcost:
             st.write("This would be such a tremendous, fantastic sale, you'll make America great again.")
             st.image(gif_really_good, width=500)
         elif 15 < OP <= 20:
-            st.write("You’ll be squeezing the clients dry, and they’ll say, ‘Thank you, may I have another?")
+            st.write("You’ll be squeezing the clients dry, and they’ll say, ‘Thank you, may I have another?'")
             st.image(gif_pretty_good, width=500)  
         elif 10 <= OP <= 14.99:
             st.write("15% is so close you can almost taste it!")
