@@ -35,7 +35,7 @@ if offer and tcost:
         elif 15 < OP <= 20:
             st.write("You’re squeezing the clients dry, and they’re saying, ‘Thank you, may I have another?")
             st.image(gif_pretty_good, width=500)  # Display GIF for "That's pretty good!"
-        elif 10 <= OP <= 15:
+        elif 10 <= OP <= 14.99:
             st.write("10-15%? You've got the key in the door, just need to turn it to unlock the 15% club.")
             st.image(gif_better_than_that, width=500)  # Display GIF for "You can do better than that.."
         elif  5 <= OP <= 9.99:
