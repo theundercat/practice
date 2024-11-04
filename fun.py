@@ -16,8 +16,8 @@ tcost = st.text_input("Total cost:")
 if offer and tcost:
     try:
         # Convert inputs to integers
-        offer = int(offer)
-        tcost = int(tcost)
+        offer = float(offer)
+        tcost = float(tcost)
         
         # Calculate Operating Profit (OP) percentage
         OP = (offer - tcost) / offer * 100
