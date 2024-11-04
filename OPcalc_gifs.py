@@ -30,7 +30,7 @@ if offer and tcost:
             st.write("When your sales pitch is so good, even the GIFs are impressed.")
             st.image(gif_god_of_sales, width=500)  # Display GIF for "God of Sales"
         elif 20 < OP <= 30:
-            st.write("In Trump's voice: This sale would be so big, so tremendous, we might have to rename the company after you.")
+            st.write("This sale would be so big, so tremendous, we might have to rename the company after you.")
             st.image(gif_really_good, width=500)  # Display GIF for "That's really good"
         elif 15 < OP <= 20:
             st.write("You’re squeezing the clients dry, and they’re saying, ‘Thank you, may I have another?")
