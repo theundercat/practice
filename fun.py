@@ -51,10 +51,10 @@ if offer and tcost:
             # Countdown loop
             while st.session_state.timer > 0:
                 mins, secs = divmod(st.session_state.timer, 60)
-                timer_display = f"{mins:02d}:{secs:02d}"
+                timer_display = f"{st.session_state.timer:02d}"
                 
                 # Display the countdown
-                st.write(f"Countdown: {timer_display}")
+                st.write(f"Exploding in {timer_display}")
                 
                 # Update timer
                 time.sleep(1)  # Wait for 1 second
