@@ -59,7 +59,7 @@ if offer and tcost:
             st.write("Boom!")
             
             # Display the GIF after the countdown ends
-            st.image(gif_url, width=300)  # Adjust width as needed
+            st.image(gif_alert, width=300)  # Adjust width as needed
             
     except ValueError:
         st.write("BRO. Numeric values only.")
