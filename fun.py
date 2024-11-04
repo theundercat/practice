@@ -32,3 +32,4 @@ if Choice:
     elif Choice.lower() == candidate2.lower():
         st.write("AMERICA")
     else:
+        st.write("Nice try.")
