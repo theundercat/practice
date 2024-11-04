@@ -3,18 +3,21 @@ import time
 
 # Define the text you want to display line-by-line
 lines = [
-    "Who will win the election?",
+    "Who should win the election?",
     "Trump? or Harris?",
-    "Type your choice and pick wisely:",
+    "Choose wisely..:",
 ]
+
+# Define the delay for each line (in seconds)
+delays = [3, 3, 4]  # Custom delay for each line
 
 # Create placeholders for each line
 placeholders = [st.empty() for _ in lines]
 
-# Display each line with a delay, and then clear it to simulate fading
+# Display each line with its specific delay, then clear it to simulate fading
 for i, line in enumerate(lines):
     placeholders[i].write(line)
-    time.sleep(2)  # Display each line for 2 seconds
+    time.sleep(delays[i])  # Use the specific delay for each line
     placeholders[i].empty()  # Clear the line to simulate fading
 
 # Now prompt for input after lines fade
@@ -29,4 +32,3 @@ if Choice:
     elif Choice.lower() == candidate2.lower():
         st.write("AMERICA")
     else:
-        st.write("Nice try.")
